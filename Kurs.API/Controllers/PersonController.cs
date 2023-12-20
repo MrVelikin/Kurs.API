@@ -47,7 +47,6 @@ namespace Kurs.API.Controllers
         }
 
         // PUT: api/People/5
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
         public async Task<IActionResult> PutPerson(Guid id, PersonDTO personDto)
         {
@@ -64,7 +63,6 @@ namespace Kurs.API.Controllers
         }
 
         // POST: api/People
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
         public async Task<ActionResult<PersonDTO>> PostPerson(PersonDTO personDto)
         {
